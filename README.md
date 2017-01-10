@@ -2,7 +2,7 @@
 
 [![Circle CI](https://circleci.com/gh/pk4media/bookshelf-scopes/tree/master.svg?style=svg&circle-token=4f67b03079c057b9ae20ef5485459f97215eebe7)](https://circleci.com/gh/pk4media/bookshelf-scopes/tree/master)
 
-Giving you Rails like scopes in Bookshelf.js.
+Giving you Rails like scopes in Bookshelf.js. This was originally a @pk4media project but I moved it over to my account as they do not use it anymore.
 
 If you add in the plugin like so:
 ```javascript

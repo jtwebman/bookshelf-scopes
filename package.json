@@ -1,25 +1,25 @@
 {
   "name": "bookshelf-scopes",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Giving you Rails like scopes in Bookshelf.js.",
   "main": "src/scopes.js",
   "dependencies": {
-    "lodash": "^3.9.3"
+    "lodash": "^3.10.1"
   },
   "devDependencies": {
-    "bluebird": "^2.9.27",
-    "bookshelf": "^0.8.1",
+    "bluebird": "^2.11.0",
+    "bookshelf": "^0.8.2",
     "chai": "^2.3.0",
     "knex": "^0.8.6",
-    "mocha": "^2.2.5",
-    "sqlite3": "^3.0.8"
+    "mocha": "^2.5.3",
+    "sqlite3": "^3.1.8"
   },
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pk4media/bookshelf-scopes.git"
+    "url": "https://github.com/jtwebman/bookshelf-scopes.git"
   },
   "keywords": [
     "bookshelf",
@@ -32,7 +32,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pk4media/bookshelf-scopes/issues"
+    "url": "https://github.com/jtwebman/bookshelf-scopes/issues"
   },
-  "homepage": "https://github.com/pk4media/bookshelf-scopes"
+  "homepage": "https://github.com/jtwebman/bookshelf-scopes"
 }
