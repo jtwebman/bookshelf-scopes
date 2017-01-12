@@ -26,9 +26,10 @@
     "scopes",
     "rails"
   ],
-  "author": "JT (https://github.com/jtwebman)",
+  "author": "JT Turner <jtwebman@gmail.com> (https://github.com/jtwebman)",
   "contributors": [
-    "David Negstad (https://github.com/dnegstad)"
+    "David Negstad <dnegstad@gmail.com> (https://github.com/dnegstad)",
+    "Kaarel Raspel <kaarel.raspel@gmail.com> (https://github.com/vellotis)"
   ],
   "license": "MIT",
   "bugs": {
