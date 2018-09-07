@@ -1,6 +1,6 @@
 # Bookshelf-Scopes
 
-[![CircleCI](https://circleci.com/gh/jtwebman/bookshelf-scopes.svg?style=svg)](https://circleci.com/gh/jtwebman/bookshelf-scopes)
+[![Build Status](https://travis-ci.org/jtwebman/bookshelf-scopes.svg?branch=master)](https://travis-ci.org/jtwebman/bookshelf-scopes)
 
 Giving you Rails like scopes in Bookshelf.js. This was originally a [PK4Media](https://github.com/pk4media/bookshelf-scopes) project but I moved it over to my account as they do not use it anymore.
 
