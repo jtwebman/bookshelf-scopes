@@ -5,7 +5,8 @@ var Promise = require('bluebird');
 
 var knex = require('knex')({
   client: 'sqlite3',
-  connection: { filename: "./mytestdb" }
+  connection: { filename: "./mytestdb" },
+  useNullAsDefault: true
 });
 
 var bookshelf = require('bookshelf')(knex);
@@ -33,6 +34,10 @@ describe('scopes - collection', function() {
     });
   });
 
+  after(function(done) {
+    knex.destroy(done);
+  });
+
   it('can add simple scope method with a where and fetch from db', function() {
 
     var TestModel1 = bookshelf.Model.extend({
@@ -49,7 +54,7 @@ describe('scopes - collection', function() {
     });
 
     expect(TestCollection1.active).to.not.be.undefined;
-    
+
     return TestCollection1.active().fetch().then(function(allActive) {
       expect(allActive.length).to.equal(2);
       expect(allActive.models[0].get('status')).to.equal('Active');

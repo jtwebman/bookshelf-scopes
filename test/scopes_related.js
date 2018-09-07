@@ -5,7 +5,8 @@ var Promise = require('bluebird');
 
 var knex = require('knex')({
   client: 'sqlite3',
-  connection: { filename: "./mytestdb" }
+  connection: { filename: "./mytestdb" },
+  useNullAsDefault: true
 });
 
 var bookshelf = require('bookshelf')(knex);
@@ -51,6 +52,10 @@ describe('scopes - related scope', function() {
         });
       })
     ]);
+  });
+
+  after(function(done) {
+    knex.destroy(done);
   });
 
   it('default scope is on related data fetch', function() {

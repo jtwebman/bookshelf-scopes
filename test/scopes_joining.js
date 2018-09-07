@@ -5,7 +5,8 @@ var Promise = require('bluebird');
 
 var knex = require('knex')({
   client: 'sqlite3',
-  connection: { filename: "./mytestdb" }
+  connection: { filename: "./mytestdb" },
+  useNullAsDefault: true
 });
 
 var bookshelf = require('bookshelf')(knex);
@@ -39,6 +40,10 @@ describe('scopes - joining scope', function() {
         });
       })
     ]);
+  });
+
+  after(function(done) {
+    knex.destroy(done);
   });
 
   it('can add scope with a basic joining where and fetchAll from db', function() {

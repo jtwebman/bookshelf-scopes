@@ -1,18 +1,18 @@
 {
   "name": "bookshelf-scopes",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Giving you Rails like scopes in Bookshelf.js.",
   "main": "src/scopes.js",
   "dependencies": {
-    "lodash": "^3.10.1"
+    "lodash": "^4.17.10"
   },
   "devDependencies": {
-    "bluebird": "^2.11.0",
-    "bookshelf": "^0.8.2",
-    "chai": "^2.3.0",
-    "knex": "^0.8.6",
-    "mocha": "^2.5.3",
-    "sqlite3": "^3.1.8"
+    "bluebird": "^3.5.2",
+    "bookshelf": "^0.13.3",
+    "chai": "^4.1.2",
+    "knex": "^0.15.2",
+    "mocha": "^5.2.0",
+    "sqlite3": "^4.0.2"
   },
   "scripts": {
     "test": "mocha"

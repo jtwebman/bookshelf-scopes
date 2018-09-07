@@ -5,7 +5,8 @@ var Promise = require('bluebird');
 
 var knex = require('knex')({
   client: 'sqlite3',
-  connection: { filename: "./mytestdb" }
+  connection: { filename: "./mytestdb" },
+  useNullAsDefault: true
 });
 
 var bookshelf = require('bookshelf')(knex);
@@ -26,6 +27,10 @@ describe('scopes - default', function() {
         table.timestamps();
       });
     });
+  });
+
+  after(function(done) {
+    knex.destroy(done);
   });
 
   it('can set default scope and fetchAll using it', function() {
