@@ -91,7 +91,7 @@ module.exports = function(bookshelf) {
       return this.query(function function_name(qb) {
         // Remove scoped statements
         _.remove(qb._statements, function (statement) {
-          return unscoped.scopeStatements.some(scopeStatement => _.isEqual(scopeStatement, statement));
+          return unscoped.scopeStatements.some(scopeStatement => _.isMatch(scopeStatement, statement));
         });
         // Clear scoped statements registry
         unscoped.scopeStatements = [];
