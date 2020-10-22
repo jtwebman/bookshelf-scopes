@@ -90,6 +90,7 @@ describe('scopes - default', function() {
       scopes: {
         default: function(qb) {
           qb.where({status: 'Active'});
+          qb.whereRaw('created_at > now()');
         }
       }
     });
